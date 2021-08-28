@@ -2,13 +2,17 @@
 session_start();
 ini_set('display_errors', 1);
 
+//! Core action class, holding all main server functions
 Class Action {
-	private $db;
+	private $db; // Database object
 
+	// Initializes the database
 	public function __construct() {
 		ob_start();
    	include 'db_connect.php';
     
+	
+	// Will automatically disconnect from the databse 
     $this->db = $conn;
 	}
 	function __destruct() {
