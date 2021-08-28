@@ -1,3 +1,7 @@
+<!--
+	Asynchronous JavaScript and XML (AJAX)
+-->
+
 <?php
 ob_start();
 date_default_timezone_set("Asia/Manila");
